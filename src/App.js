@@ -25,37 +25,6 @@ export default function App() {
     }
     setListAr(ar); //listArt похоже нужен т/к реф не вызывает ререндеринга
 
-    /*floatCont.current.onmousemove = function (e) {
-      var x = e.pageX - e.currentTarget.offsetLeft;
-      var y = e.pageY - e.currentTarget.offsetTop;
-      console.log(x);
-
-      refs.current.forEach((item, index) => {
-        var xleft = item.current.style.left.substr(
-          0,
-          item.current.style.left.length - 2
-        );
-        var depth = Math.abs(xleft - 250);
-        var xsmesh = 250 - x;
-        //console.log(getRelativeCoordinates(e, item.current).x);
-        //console.log(
-        //item.current.style.left.substr(0, item.current.style.left.length - 2)
-        //);
-        //var xdelt = getRelativeCoordinates(e, refs.current[index].current).x;
-        //var xdelt = getRelativeCoordinates(e, item.current).x;
-
-        //refs.current[index].current.offsetLeft -
-        //e.currentTarget.offsetWidth / 2;
-        gsap.to(refs.current[index].current, {
-          //xPercent: (xdelt * xdelt) / 100,
-          // xPercent: ((250 - xleft - x) * (250 - xleft - x)) / 1000,
-          xPercent: -50 + (xsmesh * depth) / 400,
-
-          yPercent: -50
-          //getRelativeCoordinates(e, refs.current[index].current).x / 10
-        });
-      });*/
-
     floatCont.current.onmousemove = function (e) {
       var divWidth = e.currentTarget.offsetWidth;
       var halfDivWidth = e.currentTarget.offsetWidth / 2;
