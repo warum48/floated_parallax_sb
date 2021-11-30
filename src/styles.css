@@ -1,0 +1,12 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.floatArea {
+  width: 90%;
+  height: 400px;
+  background-color: rgb(153, 95, 228);
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+}
